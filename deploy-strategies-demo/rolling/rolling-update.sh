@@ -8,7 +8,6 @@ for i in 1 2 3 4; do
   sed "s/__SERVER__/server$i/" v2/index.html > apps/server$i/index.html
   docker compose restart server$i
   echo "server$i atualizado e voltou ao ar."
-  echo "Dica: rode ./watch.sh em outro terminal pra ver a mistura de versões agora."
   read -p "Pressione ENTER para atualizar o próximo servidor..." _
 done
 
