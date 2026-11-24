@@ -101,13 +101,3 @@ Agora aumente a exposição gradualmente, exatamente como no vídeo (5% → 25% 
 
 Para encerrar: `docker compose down`
 
----
-
-## Dica para gravar/apresentar
-
-- Deixe o navegador aberto recarregando a página enquanto você roda os scripts em outro
-  terminal — a mudança de cor (azul/verde/amarelo) é o efeito mais visual e fácil de entender.
-- Para o rolling e o canary, o script `watch.sh` é o mais didático: ele mostra, requisição
-  por requisição, qual versão respondeu — é a prova visual da "mistura" ou da "% de tráfego".
-- Essas configs de nginx são simplificadas para fins didáticos (não use em produção sem
-  ajustar timeouts, health checks e certificados).
